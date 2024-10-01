@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myapp.css">
+    <title>Chemical Supplies</title>
+</head>
+<body>
+
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2>Chemical Supplies</h2>
+            <div class="toolbar">
+                <button id="addRowBtn">➕</button>
+                <button id="moveUpBtn">⬆️</button>
+                <button id="moveDownBtn">⬇️</button>
+                <button id="deleteRowBtn">🗑️</button>
+                <button id="refreshBtn">🔄</button>
+                <button id="saveBtn">💾</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th onclick="sortTable(1)">Chemical name</th>
+                    <th onclick="sortTable(2)">Vendor</th>
+                    <th onclick="sortTable(3)">Density (g/m³)</th>
+                    <th onclick="sortTable(4)">Viscosity (m²/s)</th>
+                    <th onclick="sortTable(5)">Packaging</th>
+                    <th onclick="sortTable(6)">Pack size</th>
+                    <th onclick="sortTable(7)">Unit</th>
+                    <th onclick="sortTable(8)">Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script src="myapp.js"></script>
+</body>
+</html>
